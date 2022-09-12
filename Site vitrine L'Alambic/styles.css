@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #6f6f6f;
+}
+
+nav h1 {
+    color: #717171;
+    font-family: 'Smooch', sans-serif;
+    font-size: 50px;
+}
+
+nav .onglets {
+    margin-top: 3px;
+    margin-left: 300px;
+}
+nav .onglets a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/images/header.jpg");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 100px;
+}
+
+/* header h1, h2 {
+    background-color: #6f6f6fA1;
+    padding: 10px;
+} */
+
+header h1 {
+    font-family: 'Smooch', sans-serif;
+    font-size: 50px;
+}
+
+header h2 {
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    outline: none; 
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.main .content .card .left {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #6f6f6f;
+    color: white;
+    height: 240px;
+    text-align: center;
+}
+
+/* .main .content .card .left {
+    margin-top: 50px;
+} */
+
+.main .content .card.right {
+    flex: 0 0 70%;
+}
+.main .content .card .right img {
+    height: 300px;
+    width: 380px;
+    margin-top: 5px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 5px solid #6f6f6f;
+    background-color: black;
+    color: white;
+    padding: 30px 100px;
+}
+
+footer h1 {
+    border-bottom: 1px solid white;
+    width: 20%;
+}
+
+footer .colonne h2 {
+    font-size: 20px;
+
+}
+
+footer .contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+footer .colonne {
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    border: solid 1px white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 680px){
+    nav .onglets {
+        margin-left: 0px;
+        margin-bottom: 3px;
+    }
+    /* .main .content .card .left {
+        width: 300px;
+    } */
+    footer .colonne {
+        margin: 10px auto;
+       
+    }
+}
